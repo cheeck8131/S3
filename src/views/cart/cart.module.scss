@@ -1,0 +1,65 @@
+.root {
+  padding: 2vh;
+
+  .top {
+    width: 100vw;
+
+    .logo {
+      margin-left: calc(50vw - 25vh / 2);
+      width: 25vh;
+    }
+  }
+
+  .content {
+    margin-top: 4vh;
+    .headers {
+      margin-top: 4vh;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .products {
+      .center {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .icon {
+        width: 15vh;
+      }
+
+      .delete {
+        width: 5vh;
+        border-radius: 1.5vh;
+
+        will-change: transform;
+        transition: all 0.3s;
+        padding: 1vh;
+        &:hover {
+          background: rgba(131, 196, 196, 0.5);
+        }
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    right: 0;
+    margin: 2vh;
+    width: 20vh;
+
+    .button {
+      text-align: center;
+      font-weight: bold;
+      padding: 1vh;
+      background: rgba(131, 196, 196, 0.5);
+      border-radius: 2vh;
+
+      will-change: transform;
+      transition: all 0.3s;
+      &:hover {
+        background: rgba(131, 196, 196, 0.75);
+      }
+    }
+  }
+}

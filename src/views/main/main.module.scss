@@ -1,0 +1,78 @@
+.root {
+  border: none;
+}
+
+.topPanel {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  width: 100%;
+
+  .logo {
+    height: 6vh;
+    align-self: center;
+  }
+
+  .cart {
+    padding: 1.5vh;
+    border-radius: 2vh;
+    align-self: center;
+
+    transition: all 0.1s;
+
+    &:hover {
+      background: rgba(131, 196, 196, 0.5);
+    }
+
+    img {
+      width: 5vh;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  width: 100vw;
+
+  .brands {
+    font-weight: bold;
+
+    .brand {
+      padding: 0.3vh;
+      padding-left: 1.1vh;
+
+      border-radius: 1.25vh;
+      transition: all 0.1s;
+
+      &:hover {
+        background: rgba(131, 196, 196, 0.5);
+      }
+    }
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    .product {
+      margin: 2vh;
+      padding: 2vh;
+      border-radius: 2vh;
+
+      transition: all 0.1s;
+
+      &:hover {
+        background: rgba(131, 196, 196, 0.5);
+      }
+
+      .add {
+        margin-top: 1vh;
+        width: 25px;
+      }
+
+      .icon {
+        width: 150px;
+      }
+    }
+  }
+}
